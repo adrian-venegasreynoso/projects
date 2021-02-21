@@ -1,3 +1,10 @@
+#The purpose of this project was to develop a model to predict the sugar content (ºBrix) in fruits from its NIR spectra.
+#iPLS was used to determine the best region of the spectra, several pre processing method were tested, snv and the sav-gol filter were
+#used (21 points, 2 degree polynomial, 2nd derivative). PLS was used to generated the model, and with cross-validation, 10 components were used.
+#Data obtained with different instruments was pre treated and then transferred to the master instrument with the PDS method, after this,
+#the predictions on the data set were obtained. The resulting model had an RPD 0f 4.33.
+#Data can be obtained from https://chemom2021.sciencesconf.org/resource/page/id/5
+
 source("functions.R")
 source("transfer.R")
 library(ggplot2)
