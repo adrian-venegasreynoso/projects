@@ -1,3 +1,8 @@
+#The purpose of this code is use a genetic algorithm to generate the best set of predictor variables for a multivariate model that predicts 
+#the boiling point of hydrocarbons by using structural data. The fitness function of the GA uses the adjusted R2 and the VIF (variance inflator factor)
+# in order select the variables that best describe the data while penalizing highly correlated models. The data was obtained from
+# DOI: 10.1039/c3gc40694f, it was found that rotable bound counters, hydrogen bond acceptor and donor counters were 
+#the parameters that resulted in the best, least collinear model. Methodology will be presented as a github pages site.
 library(dplyr)
 library(rafalib)
 library(car)
